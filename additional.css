@@ -1,0 +1,85 @@
+/* Black friday styles */
+.woocommerce span.onsale {
+    background-color: #990000 !important;
+    color: #fff !important;
+}
+span.onsale {
+    width: 90px !important;
+    height: 90px !important;
+    line-height: 1.5 !important;
+}
+/* End Black friday styles */
+.addtoany_shortcode {
+    display: none;
+}
+ul.tabs.wc-tabs {
+    display: none;
+}
+.product_meta {
+    display: none;
+}
+@media (max-width: 768px) {
+	input[type="button"] {
+    width: 100%;
+    padding: 15px;
+    font-size: 15px;
+	}
+	span.woocommerce-Price-amount.amount {
+    font-size: 25px;
+	}
+}
+/* proudly sa logo */
+.proudly-sa img {
+    object-fit: contain;
+    height: 100px;
+    margin-top: 30px;
+}
+@media (min-width: 1280px) {
+	#logo {
+	width: 180px !important;
+}
+
+	
+@media (max-width: 767px) {
+        #panel-29-0-0-1{
+          display: none !important;
+	}
+}
+
+	h2.widget-title{
+		font-size: 25px;
+    font-weight: normal;
+    color: #B51612;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+	div.textwidget custom-html-widget{
+    margin-left: 50%;
+		margin-right: 50%;
+	}
+	
+	/* DEVDEV BLACK FRIDAY HACK FOR CASH/FINANCE PRICE TEXT */
+	
+del .amount::before,
+ins .amount::before {
+  margin-right: 5px;
+}
+del .amount::before {
+  content: 'Cash Price:';
+}
+ins .amount::before {
+  content: 'Finance Price:';
+}
+	
+	.woocommerce span.onsale{
+		display: none;
+	}
+
+del {
+   text-decoration: none;
+}
+	
+ins {
+    text-decoration: none;
+}
