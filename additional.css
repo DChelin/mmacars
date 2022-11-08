@@ -71,15 +71,26 @@ del .amount::before {
 ins .amount::before {
   content: 'Finance Price:';
 }
-	
 	.woocommerce span.onsale{
 		display: none;
-	}
+	} 
 
 del {
    text-decoration: none;
+		display: block;
 }
 	
 ins {
     text-decoration: none;
+		display: block;
 }
+	
+@media (max-width: 600px) {
+  .woocommerce span.onsale{
+   display: none !important;
+	}
+}
+	.woocommerce ul.products li.product .price ins{
+		display: block;
+		text-decoration: none;
+	}
