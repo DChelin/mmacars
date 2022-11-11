@@ -1,96 +1,121 @@
+/* Products Cash/Finance Price change */
+.woocommerce ul.products li.product .price del {
+  color: black;
+  opacity: 0.99;
+  display: inline-block;
+  width: 800px;
+}
+
 /* Black friday styles */
 .woocommerce span.onsale {
-    background-color: #990000 !important;
-    color: #fff !important;
+  background-color: #990000 !important;
+  color: #fff !important;
 }
 span.onsale {
-    width: 90px !important;
-    height: 90px !important;
-    line-height: 1.5 !important;
+  width: 90px !important;
+  height: 90px !important;
+  line-height: 1.5 !important;
 }
 /* End Black friday styles */
 .addtoany_shortcode {
-    display: none;
+  display: none;
 }
 ul.tabs.wc-tabs {
-    display: none;
+  display: none;
 }
 .product_meta {
-    display: none;
+  display: none;
 }
 @media (max-width: 768px) {
-	input[type="button"] {
-    width: 100%;
-    padding: 15px;
-    font-size: 15px;
-	}
-	span.woocommerce-Price-amount.amount {
-    font-size: 25px;
-	}
+input[type="button"] {
+  width: 100%;
+  padding: 15px;
+  font-size: 15px;
+}
+span.woocommerce-Price-amount.amount {
+  font-size: 15px;
+}
 }
 /* proudly sa logo */
 .proudly-sa img {
-    object-fit: contain;
-    height: 100px;
-    margin-top: 30px;
-}
-@media (min-width: 1280px) {
-	#logo {
-	width: 180px !important;
+  object-fit: contain;
+  height: 100px;
+  margin-top: 30px;
 }
 
-	
 @media (max-width: 767px) {
-        #panel-29-0-0-1{
-          display: none !important;
-	}
+      #panel-29-0-0-1{
+        display: none !important;
+}
 }
 
-	h2.widget-title{
-		font-size: 25px;
-    font-weight: normal;
-    color: #B51612;
-    margin-bottom: 10px;
-    text-transform: uppercase;
+h2.widget-title{
+  font-size: 25px;
+  font-weight: normal;
+  color: #B51612;
+  margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
-	div.textwidget custom-html-widget{
-    margin-left: 50%;
-		margin-right: 50%;
-	}
-	
-	/* DEVDEV BLACK FRIDAY HACK FOR CASH/FINANCE PRICE TEXT */
-	
+div.textwidget custom-html-widget{
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+/* BLACK FRIDAY HACK FOR CASH/FINANCE PRICE TEXT */
+
 del .amount::before,
 ins .amount::before {
-  margin-right: 5px;
+margin-right: 5px;
 }
 del .amount::before {
-  content: 'Cash Price:';
+content: 'Cash Price:';
 }
 ins .amount::before {
-  content: 'Finance Price:';
+content: 'Finance Price:';
 }
-	.woocommerce span.onsale{
-		display: none;
-	} 
+.woocommerce span.onsale{
+  display: none;
+}
 
 del {
-   text-decoration: none;
-		display: block;
+ text-decoration: none;
+  display: block;
+  font-weight: 900;
 }
-	
+
 ins {
-    text-decoration: none;
-		display: block;
+  text-decoration: none;
+  display: block;
+  font-weight: 900;
 }
-	
-@media (max-width: 600px) {
-  .woocommerce span.onsale{
-   display: none !important;
-	}
+
+@media only screen and (min-width: 600px){
+.woocommerce span.onsale{
+ display: none !important;
 }
-	.woocommerce ul.products li.product .price ins{
-		display: block;
-		text-decoration: none;
-	}
+}
+.woocommerce ul.products li.product .price ins{
+  display: inline-block;
+  text-decoration: none;
+}
+
+
+.woocommerce div.product p.price del, .woocommerce div.product span.price del {
+  opacity: .99;
+  display: inline-block;
+  text-decoration: none;
+  width: 1500px;
+  
+}
+
+p.price del .amount::before,
+p.price ins .amount::before {
+margin-right: 5px;
+}
+p.price del .amount::before {
+content: 'Cash Price:';
+}
+p.price ins .amount::before {
+content: 'Finance Price:';
+}
